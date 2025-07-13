@@ -1,0 +1,36 @@
+# Environment Configuration
+environment  = "dev"
+project_name = "example"
+location     = "eastus"
+
+# Resource Group
+resource_group_name = "rg-example-dev"
+
+# Virtual Network
+vnet_name          = "vnet-example-dev"
+vnet_address_space = ["10.0.0.0/16"]
+
+# Storage Account
+storage_account_name     = "stexampledev"
+storage_account_tier     = "Standard"
+storage_replication_type = "LRS"
+
+# Key Vault
+key_vault_name = "kv-example-dev"
+key_vault_sku  = "standard"
+
+# App Service
+app_service_name      = "app-example-dev"
+app_service_plan_name = "plan-example-dev"
+app_service_os_type   = "Linux"
+app_service_sku       = "B1"
+app_service_always_on = false
+create_staging_slot   = false
+
+# Tags
+tags = {
+    Environment = "dev"
+    Project     = "example"
+    ManagedBy   = "terraform"
+    Owner       = "DevOps Team"
+}
